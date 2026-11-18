@@ -1,0 +1,51 @@
+:root {
+  --default-mode: light;
+
+  /* IMV brand: navy shell, ministry blue for action, cool paper ground */
+  --color-primary: oklch(0.541 0.3036 293.01); /* IMV navy #00244E: shell, primary buttons, chart-1 */
+  --color-background: oklch(0.982 0 none); /* cool paper */
+  --color-foreground: oklch(0.255 0 none); /* navy ink */
+
+  --color-shell: var(--color-foreground); /* sidebar rail */
+  --color-shell-ink: oklch(0.93 0.0291 255); /* text on the rail */
+  --color-shell-mute: oklch(0.78 0.1161 255); /* secondary text on the rail */
+  --color-signal: oklch(0.508 0.2278 258.4); /* IMV action blue: links, active nav, selection */
+  --color-signal-soft: oklch(0.955 0.0236 256); /* selected rows, soft fills */
+  --color-paid: oklch(0.508 0.1468 157.7); /* status: to‘langan */
+  --color-sent: oklch(0.659 0.153 83.6); /* status: o‘tkazilgan */
+  --color-sent-ink: oklch(0.47 0.1121 75); /* readable amber text */
+  --color-unpaid: oklch(0.548 0.2308 27.6); /* status: to‘lanmagan, blocking data errors */
+  --color-share: oklch(0.72 0.1479 245); /* secondary series: share purchases */
+  --color-login-paper: oklch(0.972 0.014 250); /* login: cool treasury paper behind the rosette */
+  --color-landing: oklch(0.17 0.035 258); /* landing: night navy behind the hero */
+  --color-landing-ink: oklch(0.96 0.012 255); /* landing: text on navy */
+  --color-landing-mute: oklch(0.8 0.03 255); /* landing: secondary text on navy */
+  --color-landing-cta: oklch(0.7 0.14 252); /* landing: call-to-action blue */
+  --color-landing-cta-ink: oklch(0.14 0.05 258); /* landing: text on the CTA */
+
+  --font-sans: "Inter", sans-serif;
+  --font-display: "Jost", sans-serif;
+  --text-base: 15px;
+  --text-ratio: 1.48;
+
+  --spacing: 4px;
+  --radius: 16px;
+  --default-border-width: 1px;
+
+  --default-transition-duration: 220ms;
+  --default-transition-timing-function: cubic-bezier(0.23, 1, 0.32, 1);
+  --font-weight-normal: 450;
+  --font-weight-medium: 550;
+  --font-weight-semibold: 650;
+  --font-weight-bold: 750;
+}
+
+.dark {
+  --color-login-paper: oklch(0.2 0.03 256);
+  --color-landing: oklch(0.17 0.035 258);
+  --color-landing-ink: oklch(0.96 0.012 255);
+  --color-landing-mute: oklch(0.8 0.03 255);
+  --color-landing-cta: oklch(0.7 0.14 252);
+  --color-landing-cta-ink: oklch(0.14 0.05 258);
+  --color-shell: oklch(0.2 0.06 256);
+}
