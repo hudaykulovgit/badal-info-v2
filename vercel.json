@@ -1,6 +1,6 @@
 {
-  "rewrites": [
-    { "source": "/", "destination": "/v2/index.html" },
-    { "source": "/v2", "destination": "/v2/index.html" }
-  ]
+  "framework": null,
+  "installCommand": "cd v2-src && npm install",
+  "buildCommand": "cd v2-src && npm run build",
+  "outputDirectory": "v2-src/dist"
 }
